@@ -1,3 +1,34 @@
 /* styles.css */
+.classe_estilo_titulo
+{
+    color:deeppink;
+    text-align:center;
+    border-style: dashed;
+    background-color: black;
+    
+}
+
+.classe_imagem
+{
+    width: 400px;
+    height: 200px;
+}
+
+.botao
+{
+    width: 120px;
+    height: auto;
+    background-color: white;
+    border-color: blue;
+    border-width: 3px;
+    margin-left: 2.5%;
+    margin-right: 2.5%;
+
+}
+.tilera{
+    display: block;
+    text-align: center;
+}
+
 
 /* Add styles here to customize the appearance of your app */

@@ -1,19 +1,64 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="UTF-8">
-    <!-- https://developer.mozilla.org/en-US/docs/Web/HTTP/CSP -->
-    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline'">
-    <link href="./styles.css" rel="stylesheet">
-    <title>Hello World!</title>
-  </head>
-  <body>
-    <h1>Hello World!</h1>
-    We are using Node.js <span id="node-version"></span>,
-    Chromium <span id="chrome-version"></span>,
-    and Electron <span id="electron-version"></span>.
+  <html>
+    <head>
+      <meta charset="UTF-8">
 
-    <!-- You can also require other files to run in this process -->
-    <script src="./renderer.js"></script>
-  </body>
-</html>
+      <link href="bootstrap.min.css" rel="stylesheet">
+      <link href="./styles.css" rel="stylesheet">
+      
+      <title>Trabalho 1</title>
+    </head>
+    
+    <body>
+      <center><b>Trabalho 1</b></center>
+      <center><b>Sistemas Embarcados I</b></center>
+      <center><b>Felipe Prates e Miguel Bittencourt</b></center>
+      
+      <hr/> <!--esta tag é vazia, ela define uma linha horizontal-->
+
+      <div class="d-grid gap-2 d-md-block">
+        <center>
+          <button id="id_gerar"    class="botao" type="button" onclick="f_gerar()"><b>GERAR</b></button>
+          <button id="id_valormin" class="botao" type="button" onclick="f_valormin()"><b>VALOR MIN</b></button>
+          <button id="id_valormax" class="botao" type="button" onclick="f_valormax()"><b>VALOR MAX</b></button>
+          <button id="id_ordenar"  class="botao" type="button" onclick="f_ordenar()"><b>ORDENAR</b></button>
+        </center>
+      </div>
+      <hr/>
+      
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-5">
+            <p><b>VALOR MIN =</b></p>
+            <p><b>VALOR MAX =</b></p>
+            <p><b>TEMPO GASTO PARA ORDENAR=</b></p>
+          </div>
+          <!--Resultados vão aqui em baixo!!!-->
+          <div class="col-sm-5">
+            <p><b>VALOR MIN</b></p>
+            <p><b>VALOR MAX</b></p>
+            <p><b>TEMPO GASTO PARA ORDENAR</b></p>
+          </div>
+        </div>
+      </div>
+      <hr/> 
+
+      <div class="d-grid gap-2 d-md-block">
+        <center>
+          <button id="id_ajuda" class="botao" type="button"><b>AJUDA</b></button>
+          <button id="id_fechar" class="botao" type="button"><b>FECHAR</b></button>
+        </center>
+      </div>
+      <hr/>
+
+      <center><b>17/03/2023</b></center>
+
+      <script src="funcoes.js"></script>
+
+      <script>
+          document.getElementById("id_ajuda").onclick = f_popup;
+          document.getElementById("id_fechar").onclick = close_window;
+      </script>
+    </body>
+  </html>
+<!DOCTYPE html>
