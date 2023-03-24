@@ -2,21 +2,18 @@
   <html>
     <head>
       <meta charset="UTF-8">
-
       <link href="bootstrap.min.css" rel="stylesheet">
       <link href="./styles.css" rel="stylesheet">
-      
+      <script src="funcoes.js"></script>
       <title>Trabalho 1</title>
     </head>
-    
+
     <body>
       <p></p>
       <center><b>Trabalho 1</b></center>
       <center><b>Sistemas Embarcados I</b></center>
       <center><b>Felipe Prates e Miguel Bittencourt</b></center>
-      
       <hr/>
-
       <div class="d-grid gap-2 d-md-block">
         <center>
           <button id="id_gerar"    class="botao" type="button" onclick="f_gerar()"><b>GERAR</b></button>
@@ -26,7 +23,6 @@
         </center>
       </div>
       <hr/>
-      
       <div class="container-fluid">
         <div class="row">
           <div class="col-sm-2"></div>
@@ -43,23 +39,14 @@
         </div>
       </div>
       <hr/> 
-
       <div class="d-grid gap-2 d-md-block">
         <center>
-          <button id="id_ajuda" class="botao" type="button"><b>AJUDA</b></button>
-          <button id="id_fechar" class="botao" type="button"><b>FECHAR</b></button>
+          <button id="id_ajuda" class="botao" type="button" onclick="f_popup()"><b>AJUDA</b></button>
+          <button id="id_fechar" class="botao" type="button" onclick="close_window()"><b>FECHAR</b></button>
         </center>
       </div>
       <hr/>
-
-      <center><b>17/03/2023</b></center>
-
-      <script src="funcoes.js"></script>
-
-      <script>
-          document.getElementById("id_ajuda").onclick = f_popup;
-          document.getElementById("id_fechar").onclick = close_window;
-      </script>
+      <center><b>24/03/2023</b></center>
     </body>
   </html>
 <!DOCTYPE html>
