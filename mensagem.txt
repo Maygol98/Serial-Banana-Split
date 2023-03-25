@@ -1,3 +1,4 @@
-Aperte no botão "GERAR" para gerar 50 números randômicos entre 0 e 50...
-
-Continuar a descrição do exercicio aqui....
+- Gere 50 números inteiros aleatórios pressionando o botão GERAR. Eles serão adicionados ao arquivo ‘dados_coletados.txt’.
+- Descubra o valor mínimo e máximo gerado pressionando os botões VALOR MIN ou VALOR MAX.
+- Classifique os números em ordem crescente e atualize a lista no arquivo ‘dados_coletados.txt’ pressionando o botão ORDENAR.
+- O tempo gasto para ordenar os valores é exibido na tela em milisegundos.

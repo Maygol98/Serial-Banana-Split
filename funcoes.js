@@ -1,50 +1,50 @@
 const fs = require('fs');
 
-const numeros = [];
+const vetorNumeros = [];
 
 function f_gerar()
 {
-    numeros.length = 0;
-    console.log(numeros.length);
+    vetorNumeros.length = 0;
+    console.log(vetorNumeros.length);
     for (let i = 0; i < 50; i++) {
-        a = Math.floor(Math.random()*50);
-        numeros.push(a);
-        console.log(a);
+        num = Math.floor(Math.random()*50);
+        vetorNumeros.push(num);
+        console.log(num);
     }  
-    fs.writeFileSync('dados_coletados.txt', String(numeros.join('\n')));
+    fs.writeFileSync('dados_coletados.txt', String(vetorNumeros.join('\n')));
 }
 
 function f_valormin()
 {
-    const min = Math.min(...numeros);
-    console.log("mínimo: "+min);
-    document.querySelector('#valor-min').textContent = min;
+    const numeroMin = Math.min(...vetorNumeros);
+    console.log("mínimo: " + numeroMin);
+    document.querySelector('#valor-min').textContent =  numeroMin;
 }
 
 function f_valormax()
 {
-    const max = Math.max(...numeros);
-    console.log("maximo: "+max);
-    document.querySelector('#valor-max').textContent = max;
+    const numeroMax = Math.max(...vetorNumeros);
+    console.log("maximo: " + numeroMax);
+    document.querySelector('#valor-max').textContent = numeroMax;
 }
 
 function f_ordenar()
 {
     const start = performance.now();
-    x = numeros.sort((a,b) => a - b);
-    console.log(x);
-    fs.writeFileSync('dados_coletados.txt', String(x.join('\n')));
+    ordemNumeros = vetorNumeros.sort((a,b) => a - b);
+    console.log(ordemNumeros);
+    fs.writeFileSync('dados_coletados.txt', String(ordemNumeros.join('\n')));
 
     const end = performance.now();
-    tempo = end - start;
-    console.log(`Execution time: ${tempo} ms`);
-    document.querySelector('#tempo').textContent = tempo + 'ms';
+    tempoDeExecucao = end - start;
+    console.log(`Execution time: ${tempoDeExecucao} ms`);
+    document.querySelector('#tempo').textContent = tempoDeExecucao + 'ms';
 }
 
 function f_popup()
 {
-    messege = fs.readFileSync('mensagem.txt');
-    alert(messege);
+    mensagem = fs.readFileSync('mensagem.txt');
+    alert(mensagem);
 }
 
 function close_window()
