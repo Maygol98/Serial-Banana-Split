@@ -14,6 +14,7 @@
       <center><b>Sistemas Embarcados I</b></center>
       <center><b>Felipe Prates e Miguel Bittencourt</b></center>
       <hr/>
+
       <div class="d-grid gap-2 d-md-block">
         <center>
           <button id="id_gerar"    class="botao" type="button" onclick="f_gerar()"><b>GERAR</b></button>
@@ -26,17 +27,11 @@
       <div class="container-fluid">
         <div class="row">
           <div class="col-sm-2"></div>
-          <div class="col-sm-4">
-            <p><b>VALOR MIN =</b></p>
-            <p><b>VALOR MAX =</b></p>
-            <p><b>TEMPO GASTO PARA ORDENAR =</b></p>
+          <div class="col-sm-9">
+            <p><b>VALOR MIN = <span id="valor-min" class="container"></span></b></p>
+            <p><b>VALOR MAX = <b><span id="valor-max"></span></b></b></p>
+            <p><b>TEMPO GASTO PARA ORDENAR =<b><span id="tempo"></span></b></b></p>
           </div>
-          <div class="col-sm-5">
-            <p><b><span id="valor-min"></span></b></p>
-            <p><b><span id="valor-max"></span></b></p>
-            <p><b><span id="tempo"></span></b></p>
-          </div>
-        </div>
       </div>
       <hr/> 
       <div class="d-grid gap-2 d-md-block">

@@ -29,6 +29,7 @@
     display: block;
     text-align: center;
 }
-
-
+.container{
+    border-left: 500px;
+}
 /* Add styles here to customize the appearance of your app */

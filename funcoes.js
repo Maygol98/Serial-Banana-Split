@@ -10,6 +10,10 @@ function f_gerar()
         num = Math.floor(Math.random()*50);
         vetorNumeros.push(num);
         console.log(num);
+        
+        document.querySelector('#valor-max').textContent = "";
+        document.querySelector('#valor-min').textContent = "";
+        document.querySelector('#tempo').textContent = "";
     }  
     fs.writeFileSync('dados_coletados.txt', String(vetorNumeros.join('\n')));
 }
