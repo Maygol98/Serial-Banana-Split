@@ -22,7 +22,7 @@ function f_valormin()
 {
     const numeroMin = Math.min(...vetorNumeros);
     console.log("mínimo: " + numeroMin);
-    document.querySelector('#valor-min').textContent =  numeroMin;
+    document.getElementById('valor-min').textContent =  numeroMin;
 }
 
 function f_valormax()
